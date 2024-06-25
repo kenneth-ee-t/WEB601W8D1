@@ -15,10 +15,11 @@ function createCircle(radius) {
   }
 };
 
-var circle1 = createCircle();
+var circle1 = createCircle(3);
 
 //Write console.log here
-
+console.log("Area is space " + circle1.area());
+console.log("Rdius is " +circle1.radi); //this will fail
 
 //Encapsulation Technique 2: private variables
 
@@ -35,10 +36,11 @@ function createCircle(radius) {
     }
 };
 
-var circle2 = createCircle();
+var circle2 = createCircle(3);
 
 //Write console.log here
-
+console.log("Circumference is space " + circle2.circumference());
+console.log("Daimeter is " +circle2.diameter); //this will fail
 
 </script>
 

@@ -8,6 +8,9 @@
 
 function Person(FirstName, LastName, Age) {
         //Parameters/Properties as Constructor
+        this.firstName = FirstName || "default value"; //this is the default value
+        this.lastName = LastName || "default value"; //this is the default value
+        this.age = Age || "25"; //this is the default value as a number
         
         //Method
         this.getFullName = function () {
@@ -16,11 +19,11 @@ function Person(FirstName, LastName, Age) {
 };
 
 //Create object 1
-var person1 = new Person();
+var person1 = new Person("James", "Bond", "50");
 alert(person1.getFullName());
 
 //Create object 2
-var person2 = new Person();
+var person2 = new Person("Bruce", "Wayne");
 alert(person2.getFullName());
 
 </script>

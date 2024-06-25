@@ -9,11 +9,20 @@
 <body>
 
     <div id = "component1">
-       
+       <mycomponent1></mycomponent1>
     </div>
 
 <script>
-    
+    Vue.component('mycomponent1', {
+        template: '<div><h1>Welcome to Vue components!</h1></div>'
+    });
+    Vue.component('mycomponent2', {
+        template: '<div><h1>Vue is interesting!</h1></div>'
+    });
+
+    var vm1 = new Vue({
+        el:'#component1'
+    });
 </script>
     
 </body>`
